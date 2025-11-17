@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/assets/favicondonna.png?v=1" />
+    <link rel="shortcut icon" type="image/png" href="/assets/favicondonna.png?v=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Claudia Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      html { font-family: 'Lato', system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial, 'Apple Color Emoji', 'Segoe UI Emoji'; }
+      .font-display { font-family: 'Playfair Display', Georgia, 'Times New Roman', serif; }
+      .font-script { font-family: 'Great Vibes', 'Brush Script MT', cursive; }
+      /* Typography helpers for main content */
+      .typo h1, .typo h2, .typo h3 {
+        font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
+        font-weight: 700;
+        letter-spacing: 0.1px;
+        line-height: 1.2;
+      }
+      .typo p, .typo li {
+        font-family: 'Lato', system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial;
+        font-weight: 400;
+        line-height: 1.75;
+        letter-spacing: 0.2px;
+      }
+      .typo strong, .typo b { font-weight: 700; }
+      @keyframes floatFade {
+        0% { opacity: 0; transform: translateY(8px) scale(0.98); }
+        10% { opacity: 0.40; }
+        20% { opacity: 0.50; }
+        50% { opacity: 0.45; }
+        80% { opacity: 0.35; }
+        100% { opacity: 0; transform: translateY(-12px) scale(1); }
+      }
+      .bg-word { position: absolute; pointer-events: none; user-select: none; opacity: 0; animation-name: floatFade; animation-timing-function: ease-in-out; text-shadow: 0 2px 6px rgba(0,0,0,0.10); }
+      /* Loading bar animation for buttons */
+      @keyframes loadingSlide {
+        0% { transform: translateX(-100%); }
+        100% { transform: translateX(400%); }
+      }
+      .btn-loading-bar { animation: loadingSlide 1.2s linear infinite; }
+      /* Route change fade */
+      @keyframes routeFade { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: translateY(0); } }
+      .route-fade { animation: routeFade 250ms ease; }
+    </style>
+    <script type="module" crossorigin src="/assets/index-DI7zZg5P.js"></script>
+  </head>
+  <body>
+    <div id="root" class="min-h-screen bg-gray-100"></div>
+  </body>
+</html>
